@@ -14,8 +14,9 @@ public:
     void MoveBlockRight();
     void MoveBlockDown();
     Grid grid;
+    bool gameOver;
 
-private:
+    private: 
     bool IsBlockOutside();
     void RotateBlock();
     void LockBlock();
