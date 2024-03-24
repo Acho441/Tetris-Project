@@ -15,13 +15,15 @@ public:
     void MoveBlockDown();
     Grid grid;
     bool gameOver;
+    int score;
 
-    private: 
+private:
     bool IsBlockOutside();
     void RotateBlock();
     void LockBlock();
     bool BlockFits();
     void Reset();
+    void UpdateScore(int LinesCleared, int moveDownPoints);
     std::vector<Block> blocks;
     Block currentBlock;
     Block nextBlock;
